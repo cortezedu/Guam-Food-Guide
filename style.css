@@ -1,1 +1,174 @@
 
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jost:wght@200;400;600;900&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Jost", sans-serif;
+  color: #333333;
+}
+h1,
+h2 {
+  font-weight: 900;
+}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* HEADER BANNER */
+.header {
+  display: flex;
+}
+.header img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* MENU */
+div.menu {
+  padding: 0px 20%;
+  background-color: #e4d0ae;
+}
+div.menu ul {
+  margin: 0px;
+  padding: 20px 0px;
+}
+div.menu ul li {
+  display: inline;
+}
+.menu a {
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  margin-right: 50px;
+}
+.menu a:hover,
+.menu a:active,
+.menu a.active {
+  color: #667729;
+}
+
+/* MAIN CONTENT */
+div.main > div {
+  padding: 50px 20%;
+}
+
+/* HOME PAGE FEATURE */
+div.main > div.feature {
+  background-color: #333333;
+  background-size: cover;
+  border-top: 2px solid #333333;
+  padding: 0px;
+}
+
+.feature div {
+  background-color: rgba(48, 48, 48, 0.4);
+  padding: 50px 20%;
+}
+
+.feature,
+.feature h1,
+.feature h2,
+.feature h3,
+.feature h4 {
+  color: #ffffff;
+}
+#guam-bbq {
+  background-image: url("https://cdn.glitch.com/af073e29-5fd1-4faa-bd26-bf3356404f61%2Fbbq.png");
+}
+
+#guam-shaved-ice {
+  background-image: url("https://cdn.glitch.com/af073e29-5fd1-4faa-bd26-bf3356404f61%2FGUAM.png?v=1617273349474");
+}
+
+/* LOCAL & DESSERT CONTENT */
+div.local,
+div.dessert {
+  border-top: 2px solid #333333;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.local:nth-child(odd) p.button a,
+div.dessert:nth-child(odd) p.button a {
+  background-color: #333333;
+  color: #ffffff;
+}
+div.local:nth-child(odd) p.button a:hover,
+div.local:nth-child(odd) p.button a:active,
+div.dessert:nth-child(odd) p.button a:hover,
+div.dessert:nth-child(odd) p.button a:active {
+  background-color: #667729;
+  color: #ffffff;
+}
+
+div.local:nth-child(even),
+div.dessert:nth-child(even) {
+  background-color: #333333;
+}
+div.local:nth-child(even),
+div.local:nth-child(even) h1,
+div.local:nth-child(even) h2,
+div.local:nth-child(even) h3,
+div.local:nth-child(even) h4,
+div.dessert:nth-child(even),
+div.dessert:nth-child(even) h1,
+div.dessert:nth-child(even) h2,
+div.dessert:nth-child(even) h3,
+div.dessert:nth-child(even) h4 {
+  color: #ffffff;
+}
+
+div.local .col1,
+div.dessert .col1 {
+  width: 25%;
+  min-width: 150px;
+}
+div.local .col1 img,
+div.dessert .col1 img {
+  width: 100%;
+}
+div.local .col2,
+div.dessert .col2 {
+  width: 65%;
+  padding-left: 10%;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 80px 10px 80px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.75em;
+  text-align: right;
+}
+
+/* BUTTON ELEMENT */
+p.button {
+  margin: 50px 0px;
+}
+p.button a {
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+}
+p.button a:hover,
+p.button a:active {
+  background-color: #667729;
+  color: #ffffff;
+}
